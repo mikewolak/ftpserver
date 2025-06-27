@@ -1,5 +1,5 @@
-// src/utils.c
-#include "../include/utils.h"
+//utils.c
+#include "utils.h"
 
 char* get_absolute_path(const char *path) {
     static char abs_path[PATH_MAX];
