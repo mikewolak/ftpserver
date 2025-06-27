@@ -1,8 +1,8 @@
 // src/client.c
-#include "../include/client.h"
-#include "../include/logging.h"
-#include "../include/commands.h"
-#include "../include/network.h"
+#include "client.h"
+#include "logging.h"
+#include "commands.h"
+#include "network.h"
 
 // Global variables
 client_t **clients = NULL;
