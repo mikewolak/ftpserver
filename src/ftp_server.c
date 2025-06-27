@@ -1,11 +1,11 @@
 // src/ftp_server.c
-#include "../include/config.h"
-#include "../include/client.h"
-#include "../include/logging.h"
-#include "../include/network.h"
-#include "../include/utils.h"
-#include "../include/commands.h"
-#include "../include/daemon.h"
+#include "config.h"
+#include "client.h"
+#include "logging.h"
+#include "network.h"
+#include "utils.h"
+#include "commands.h"
+#include "daemon.h"
 
 // Global variables
 int server_running = 1;
