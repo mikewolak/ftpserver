@@ -1,6 +1,6 @@
 // src/daemon.c
-#include "../include/config.h"
-#include "../include/logging.h"
+#include "config.h"
+#include "logging.h"
 
 // Global flag for daemon mode
 int daemon_mode = 0;
