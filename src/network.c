@@ -1,6 +1,6 @@
 // src/network.c
-#include "../include/network.h"
-#include "../include/logging.h"
+#include "network.h"
+#include "logging.h"
 
 int init_server_socket(int port) {
     int server_socket;
