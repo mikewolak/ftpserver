@@ -1,7 +1,7 @@
 // src/commands.c
-#include "../include/commands.h"
-#include "../include/logging.h"
-#include "../include/network.h"
+#include "commands.h"
+#include "logging.h"
+#include "network.h"
 
 void send_response(int socket, int code, const char *message) {
     char response[MAX_BUFFER];
