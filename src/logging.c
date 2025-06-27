@@ -1,5 +1,5 @@
 // src/logging.c
-#include "../include/logging.h"
+#include "logging.h"
 
 // Log file
 FILE *log_file = NULL;
