@@ -313,6 +313,9 @@ void process_command(client_t *client, const char *command, const char *arg) {
                     log_message(FTPLOG_ERROR, "Failed to send directory entry: %s", strerror(errno));
                     break;
                 }
+                
+                // Update activity timestamp during transfer to prevent timeout
+                client_update_activity(client);
             }
         }
         
@@ -409,6 +412,9 @@ void process_command(client_t *client, const char *command, const char *arg) {
             
             total_bytes += sent;
             time_t current_time = time(NULL);
+            
+            // Update activity timestamp during transfer to prevent timeout
+            client_update_activity(client);
             
             // Log transfer rate every second
             if (current_time > last_log) {
@@ -550,6 +556,9 @@ void process_command(client_t *client, const char *command, const char *arg) {
             
             total_bytes += written;
             time_t current_time = time(NULL);
+            
+            // Update activity timestamp during transfer to prevent timeout
+            client_update_activity(client);
             
             // Log transfer rate every second
             if (current_time > last_log) {
